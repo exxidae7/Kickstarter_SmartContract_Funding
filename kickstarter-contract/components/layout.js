@@ -1,6 +1,6 @@
 import React from "react";
  
-const c = () => {
+const layout = (props) => {
   return (
      <div>
           <h1>Header</h1>
@@ -11,4 +11,4 @@ const c = () => {
 
 
 };
-export default c;
+export default layout;
