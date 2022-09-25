@@ -1,6 +1,6 @@
 import  HDWalletProvider from '@truffle/hdwallet-provider'
 import  Web3 from 'web3'
-import  compiledFactory from './build/CampaignFactory.json' assert { type: "json" }
+import  compiledFactory from './build/CampaignFactory.json' 
 
 const provider = new HDWalletProvider(
   "794a20c0a854ad6b22611a4e52c56e711726aa50b23adaabd17c239f6b32130d" , 
