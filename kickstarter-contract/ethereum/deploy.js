@@ -1,8 +1,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
-const path = require('path')
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+require('dotenv').config()
 const provider = new HDWalletProvider(
   process.env.PRIVATE_KEY , 
   // remember to change this to your own phrase!
@@ -22,6 +21,7 @@ const deploy = async () => {
     .deploy({ data: compiledFactory.bytecode })
     .send({ gas: '1000000', from: accounts[0] })
 
+  console.log(interface)
 
   console.log('Contract deployed to', result.options.address)
   provider.engine.stop()
